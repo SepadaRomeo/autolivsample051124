@@ -1,0 +1,34 @@
+  <!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Table</h1>
+    <table id="mytable">
+        <tr>
+            <th></th>
+            <th>No.</th>
+            <th>Box Contents</th>
+            <th>Date Range of Contents</th>
+            <th>Retention Period</th>
+            <th>For Destruction</th>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td><span class="row-number">1</span></td>
+            <td class="wider-column"><input type="text" class="wider-input"></td>
+            <td><input type="text"></td>
+            <td><input type="number"></td>
+            <td><input type="text"></td>
+        </tr>
+    </table>
+    <br>
+    <input type="button" class="b" value="Add new row" onclick="row()">
+    <input type="button" class="b" value="Delete selected rows" onclick="del()">
+    <script src="script.js"></script>
+</body>
+</html>
